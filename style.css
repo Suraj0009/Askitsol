@@ -1,3 +1,56 @@
+@media (max-width: 900px) {
+  .new {
+      height: auto;
+      padding: 20px;
+      text-align: center;
+      margin-top: 0;
+  }
+
+  .graylayer {
+      height: auto;
+      margin-top: 20px;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .images img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+  }
+  .images2 img {
+    border-radius: 50%;
+    max-width: 100%; /* Set the maximum width to 100% to make it responsive */
+    height: auto; /* Allow the height to adjust proportionally */
+    position: relative;
+    z-index: 2;
+    left: 0; /* Reset left position for center alignment */
+    right: 0; /* Reset right position for center alignment */
+    top: 0; /* Reset top position for center alignment */
+    margin: 20px auto; /* Center the image horizontally and add vertical margin */
+}
+
+
+  .text, .text2 {
+      width: 100%;
+      text-align: center;
+      margin: 20px 0;
+  }
+
+  .text h1, .text2 h1 {
+      font-size: 20px;
+  }
+
+  .text p, .text2 p {
+      font-size: 14px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+
+  .button1, .button2 {
+      width: 100%;
+  }
+}
 
   .new {
       background:  #fcfefe;
@@ -88,6 +141,12 @@
       font-size: 24px;
       font-family: Arial, Helvetica, sans-serif;
       color: #f76b8a;
+    }
+    .logotitle{
+
+      color: #eaf6f6;
+
+
     }
     
     .text p {
@@ -182,17 +241,12 @@
       /* Use the provided color combinations for the background */
     }
     
-  footer {
-    
-    width: 100vw;
-    
-    
-    }
+ 
     
     
     .container {
       
-      background-color: rgb(100, 175, 204);
+     background-color:  rgb(130 186 207);
       width: 100vw;
       margin: -12px auto;
       display: flex;
@@ -201,15 +255,25 @@
       flex-direction: column;
       margin-left: 0px;
       height: 312px;
-      border-radius: 30px;
-    
+      border-top-left-radius: 9px;
+      border-top-right-radius: 9px;
+     
     }
-    
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      width: 100vw;
+      margin-top: 10px;
+  }
     .row {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-right: 0px;
+      margin-bottom: 176px;
+      font-size: 17px;
       
     }
     
@@ -224,15 +288,34 @@
       margin-right: -15px;
     }
     
-    .col .logo {
+     .logo {
       width: 88px;
-      height: 88px; /* Ensure the height matches the width for a perfect circle */
+      height: 88px;
+      margin-right: 10px; /* Ensure the height matches the width for a perfect circle */
       margin-bottom: 25px;
       border-radius: 50%; /* Create a circular shape */
-      border: 3px solid #3498db; /* Add a border for contrast */
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+       /* Add a border for contrast */
+     /* Add a subtle shadow */
       transition: transform 0.3s ease; /* Add a smooth hover effect */
   }
+  
+    .form {
+      position: relative;
+  top:-193px ;
+  width: 10px;
+  height: 10px;
+  left: -538px;
+  }
+  
+
+  #company{
+  position: relative;
+  top:146px ;
+  left: -582px;
+
+
+  }
+  
 
   /* Hover effect to scale the logo on hover */
   .col .logo:hover {
@@ -265,21 +348,44 @@
       margin-left: 10px;
 
     }
-    
     .col .social a i {
-      color: #111111;
+      color: rgb(0, 0, 0);
       margin-top: 2rem;
       height: 30px;
-      width: 30px;
+      width: 46px;
+      font-size: 19px;
       margin-right: 5px;
       transition: 0.3s ease;
-    }
-    
-    .col .social a i:hover {
-      transform: scale(1.5);
-      filter: grayscale(25);
-    }
-    
+  }
+  
+  .social a:hover .facebook-icon {
+    transform: scale(1.5);
+      color: #1877f2; /* Facebook blue color */
+  }
+  
+  .social a:hover .instagram-icon {
+      color: #bc2a8d;
+      transform: scale(1.5); /* Instagram pink color */
+  }
+  
+  .social a:hover .youtube-icon {
+    transform: scale(1.5);
+      color: #ff0000; /* YouTube red color */
+  }
+  
+  .social a:hover .twitter-icon {
+    transform: scale(1.5);
+      color: #1da1f2; /* Twitter blue color */
+  }
+  
+  .social a:hover .linkedin-icon {
+      color: #0077b5; 
+        transform: scale(1.5);
+  }
+  
+
+
+    /*dasda*/
     .col .links a {
       display: block;
       text-decoration: none;
@@ -328,15 +434,17 @@
       position: relative;
       left: -470px;
       right: 12px;
+      width: 2px;
       height: 10px;
     }
     
-    .row .form input {
+    .form input {
       background-color: #eaf6f6;
       border: 0;
       outline: none;
-      padding: 14px 20px;
+      padding: 11px 4px;
       border-radius: 6px;
+      margin: ;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
     }
@@ -375,3 +483,62 @@
       }
     }
     
+    /* Original CSS styles for larger screens */
+
+/* ... (Your existing styles) ... */
+
+/* Media query for screens smaller than 900px */
+@media (max-width: 900px) {
+  body {
+      justify-content: center;
+      align-items: flex-start;
+  }
+  
+  .new {
+      height: auto;
+      min-height: 100vh;
+  }
+  
+  .graylayer {
+      height: auto;
+  }
+
+  .images img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+  }
+
+  .text, .text2 {
+      width: 100%;
+      text-align: center;
+  }
+
+  .text h1, .text2 h1 {
+      font-size: 20px;
+  }
+  
+  /* ... (Other responsive adjustments as needed) ... */
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .col {
+      margin-left: 0;
+      margin-right: 0;
+      text-align: center;
+  }
+  
+  .col h3::after {
+      width: 20px;
+  }
+
+  .row .form {
+      left: 0;
+      right: 0;
+      text-align: center;
+  }
+  
+  /* ... (Other responsive adjustments as needed) ... */
+}
+
